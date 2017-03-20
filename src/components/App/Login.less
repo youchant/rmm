@@ -1,0 +1,48 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+
+  button {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 40px;
+
+  img {
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  span {
+    font-size: 16px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+:global {
+  .ant-spin-container,
+  .ant-spin-nested-loading {
+    height: 100%;
+  }
+}
+

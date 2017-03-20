@@ -1,0 +1,78 @@
+
+.logo {
+  margin: 16px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+
+.appName {
+  font-weight: bold;
+  vertical-align: super;
+  margin-left: 5px;
+}
+
+.desktop {
+  height: 100vh;
+}
+
+.header {
+  background: #fff;
+  padding: 0;
+  height: auto;
+  line-height: inherit;
+}
+
+.content {
+  margin: 0 16px;
+}
+
+.main {
+  background: #fff;
+  min-height: 360px;
+  position: relative;
+  padding: 0 12px;
+}
+
+.login :global(.ant-spin-container) {
+  height: 100vh;
+}
+
+:global {
+
+  .top-menu .ant-menu-submenu {
+    float: right;
+  }
+
+  .ant-layout-sider-collapsed {
+    .anticon {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+    .nav-text {
+      display: none;
+    }
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+      display: none;
+    }
+  }
+
+
+  .ant-layout-footer {
+    padding: 12px 16px;
+  }
+  .ant-layout-sider-trigger {
+    background: inherit;
+    color: inherit;
+  }
+
+
+  .table-operations {
+    margin: 16px 0;
+    > button {
+      margin-right: 8px;
+    }
+  }
+}

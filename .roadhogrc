@@ -1,0 +1,25 @@
+{
+  "entry": "src/index.js",
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime"
+      ]
+    }
+  },
+  "theme": {
+    "border-radius-base": "2px",
+    "border-radius-sm": "1px"
+  },
+  "proxy": {
+
+  }
+}
