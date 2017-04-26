@@ -1,5 +1,8 @@
-{
-  "entry": "src/index.js",
+const webpack = require('webpack');
+
+export default {
+  "entry": ["src/index.js", "src/fake.js"],
+  "multipage": true,
   "env": {
     "development": {
       "extraBabelPlugins": [
@@ -10,8 +13,8 @@
     },
     "production": {
       "extraBabelPlugins": [
-        "dva-hmr",
-        "transform-runtime"
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
       ]
     }
   },
@@ -23,3 +26,4 @@
 
   }
 }
+;
